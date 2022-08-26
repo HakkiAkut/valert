@@ -1,5 +1,5 @@
 {
-  "name": "valert",
+  "name": "@hakut/valert",
   "version": "0.1.0",
   "main": "dist/valert.umd.js",
   "scripts": {
