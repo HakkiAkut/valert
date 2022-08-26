@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <VAlert />
+    <button @click="call">button</button>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import VAlert from "./components/VAlert.vue";
 export default {
   name: "App",
-  components: {
-    HelloWorld,
+  data: () => ({
+    alert: { show: false, title: "", desc: "", duration: 1, type: "success" },
+  }),
+  methods: {
+    call: function () {
+      this.$valert({
+        type: "success",
+        title: "item.title",
+        desc: "item.desc",
+        duration: 2,
+      });
+    },
   },
+  components: { VAlert },
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
