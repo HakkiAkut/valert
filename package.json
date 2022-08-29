@@ -1,6 +1,6 @@
 {
   "name": "@hakut/valert",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "main": "dist/valert.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",

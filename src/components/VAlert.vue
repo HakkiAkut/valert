@@ -157,14 +157,12 @@ export default {
   align-items: center;
   width: 450px;
   min-height: 130px;
-  height: auto;
   background-color: #fff;
   border-radius: 15px;
   overflow: hidden;
   gap: 15px;
   z-index: 9999;
 }
-
 .alert--right-top {
   right: 10px;
   top: 10px;
@@ -214,12 +212,16 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 10px 0;
+  margin-left: 100px;
 }
 
 .alert-icon {
+  position: absolute;
   background-color: #edf9f0;
-  width: 90px;
-  height: 130px;
+  width: fit-content;
+  padding: 10px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -238,5 +240,30 @@ export default {
 }
 .alert-icon.alert-icon--information {
   background-color: #eef2fa;
+}
+
+@media (max-width: 600px) {
+  .alert {
+    min-height: 80px;
+    width: 270px;
+  }
+  .alert-icon {
+    width: fit-content;
+    padding: 10px;
+    height: 100%;
+  }
+  .alert-text {
+    font-size: 16px;
+  }
+  .alert-text--title {
+    font-size: 18px;
+  }
+  .alert-icon-svg {
+    width: 50px;
+    height: 50px;
+  }
+  .column {
+    margin-left: 80px;
+  }
 }
 </style>

@@ -16,9 +16,9 @@ export default {
     call: function () {
       this.$valert({
         type: "success",
-        title: "item.title",
-        desc: "item.desc",
-        duration: 2,
+        title: "item.title asdasdasda adasdas adas das",
+        desc: "item.desc adasdasd asdasd asdas dasd a sd item.desc adasdasd asdasd asdas dasd a sd item.desc",
+        duration: 200,
       });
     },
   },
